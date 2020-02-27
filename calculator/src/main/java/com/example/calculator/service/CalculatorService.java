@@ -17,20 +17,21 @@ public class CalculatorService {
 
             switch (operation.toUpperCase()) {
                 case "MULTIPLY":
-                    response.append(value1 * value2).toString();
+                    response.append(value1 * value2);
                     break;
                 case "DIVIDE":
                     if (value2 == 0) {
-                        response.append("Can not divide by zero").toString();
+                        response.append("Can not divide by zero");
+                        break;
                     }
 
-                    break;
+                    
                 case "SUBTRACT":
 
-                    response.append(value1 - value2).toString();
+                    response.append(value1 - value2);
                     break;
                 case "ADD":
-                    response.append(value1 + value2).toString();
+                    response.append(value1 + value2);
                     break;
                 default:
                     response.append("Operation not recognized");
