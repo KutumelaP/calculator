@@ -24,8 +24,8 @@ public class CalculatorService {
                         response.append("Can not divide by zero");
                         break;
                     }
-
-                    
+                 response.append(value1 / value2);
+                    break;
                 case "SUBTRACT":
 
                     response.append(value1 - value2);
